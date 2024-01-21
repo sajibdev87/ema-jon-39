@@ -1,0 +1,13 @@
+.img-box {
+    width: 451px;
+    height: 633px;
+    border-radius: 8px;
+    background: #FFE0B3;
+
+}
+.img-box img {
+    width: 451px;
+    height: 633px;
+    padding: 0 0 13px 13px;
+  
+}

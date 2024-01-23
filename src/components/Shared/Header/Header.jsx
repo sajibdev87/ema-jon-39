@@ -13,9 +13,9 @@ const Header = () => {
        </div>
        <div className="flex-none">
          <ul className="menu menu-horizontal px-1">
-           <li><NavLink to='/shop' className='text-white'>Shop</NavLink></li>
            <li><NavLink to='/About' className='text-white'>About</NavLink></li>
-           <li><a className='text-white'>Order</a></li>
+           <li><NavLink to='/shop' className='text-white'>Shop</NavLink></li>
+           <li><NavLink to='/Order' className='text-white'>Order</NavLink></li>
            <li><a className='text-white'>Order Review</a></li>
            <li><a className='text-white'>Manage Inventory</a></li>
          </ul>

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import Product from './product/product';
 import Cart from './Cart/Cart';
+import { addToDb } from '../../Utilities/fakedb';
 
 const Shop = () => {
 
@@ -27,14 +28,13 @@ const Shop = () => {
         }
 
         setCart(newCart)
+        addToDb (selectedProduct.id)
     }
 
     const clearAddToCart = () => {
         setCart ([])
     }
-     
 
-  
     return (
         <div className='py-16 flex'>
 

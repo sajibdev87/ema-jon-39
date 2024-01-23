@@ -4,7 +4,9 @@ import Main from './layout/Main'
 import About from './components/About/About'
 import Shop from './components/Shop/Shop'
 import Home from './components/Home/Home'
-
+import Order from './components/Order/Order'
+import { productAndCatrLoader } from './loader/productAndCatrLoader'
+ 
 function App() {
  
  const router = createBrowserRouter([
@@ -16,15 +18,24 @@ function App() {
         path:'/',
         element:<Home></Home>
       },
+
+      {
+        path:'/about',
+        element:<About></About>
+      },
+      {
+        path:'/order',
+        loader: productAndCatrLoader,
+        element:<Order />
+      },
+      
       {
         path:'/shop',
         element:<Shop></Shop>,
         loader: ()=> fetch('products.json')
       },
-      {
-        path:'/about',
-        element:<About></About>
-      },
+
+     
     ]
     
   }
